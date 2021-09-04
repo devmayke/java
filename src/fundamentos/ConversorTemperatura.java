@@ -6,7 +6,7 @@ public class ConversorTemperatura {
     double fahrenheit = 5;
     final double DIMINUI  = 32;
     final double MULTIPLICADOR  = 5. / 9.;
-    double celsius = (fahrenheit - DIMINUI) e MULTIPLICADOR;   
+    double celsius = (fahrenheit - DIMINUI) * MULTIPLICADOR;   
     System.out.println(celsius);
   }
   
