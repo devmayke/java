@@ -10,8 +10,11 @@ public class Pessoa{
     peso = pesoConstrutor;
     
   }
-  double comer(double comida){
-    peso+= comida;
+  double comer(Comida comida){
+    peso+= comida.peso;
     return peso;
   } 
+  void apresentar(){
+    System.out.println("O " + nome + " aumentou seu peso para " + peso + "kg");  
+  }
 }
