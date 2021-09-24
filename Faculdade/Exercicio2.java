@@ -11,9 +11,10 @@ public class Exercicio2 {
         System.out.println(str.substring(9));
         System.out.println(str.substring(3,11));
         System.out.println(str.replace("de ","" ));
-
+        System.out.println(str.toUpperCase());
+        System.out.println(str.toLowerCase());
+        System.out.println(str.trim());
+        System.out.println(str.length());
+        System.out.println(str.concat(" da faculdade"));
     }
-
-
-
 }
