@@ -1,13 +1,12 @@
 package fundamentos.desafio;
 
 public class Pessoa{
-
-
   String nome;
   double peso = 60;
-  Pessoa(String nomeConstrutor, double pesoConstrutor){
-    nome = nomeConstrutor;
-    peso = pesoConstrutor;
+
+  Pessoa(String nome, double peso){
+    this.nome = nome;
+    this.peso = peso;
     
   }
   double comer(Comida comida){
