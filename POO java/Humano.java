@@ -13,7 +13,7 @@ public class Humano {
     }
     
     public void Falar() {
-        System.out.println( "Apenas sons sem sentido" );
+        System.out.print( "Apenas sons sem sentido" );
     }
     
     public void Birra() {

@@ -6,6 +6,10 @@ public class Main {
     // System.out.print(bebe.falar());
     Crianca lC = new Bebe( 4.37f, 0.39f );
     lC.Birra();
+
+
+    Humano idoso = new Idoso("status");
+    idoso.Falar();
     
   }
 }
