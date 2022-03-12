@@ -6,7 +6,9 @@ public class Cachorro extends Animal {
       super( aPeso, aAltura );
       raca = aRaca;
   }
-  
+  public Cachorro(){
+      
+  }
   @Override
   public void andar() {
       System.out.println( "PDD - PTE - PDE - PTD" );

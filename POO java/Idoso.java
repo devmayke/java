@@ -8,7 +8,7 @@ public class Idoso extends Humano {
 
 
   public Idoso(String status){
-      if(status == "status"){
+      if(status.equals("status")){
         this.status();
       }else{
           System.out.println("A string '" + status + "' passada no construtor não pôde retornar nenhum resultado. Tente 'status'" );

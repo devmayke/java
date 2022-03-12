@@ -7,6 +7,10 @@ public class Fixo extends Estrutura {
       super( aAltura, aLargura, aComprimento );
       tipo = aTipo;
   }
+  public Fixo(){
+
+  }
+  
   
   @Override
   public void Quebrar( String aNivel ) {
@@ -23,6 +27,7 @@ public class Fixo extends Estrutura {
           System.out.println( "Destruição Total" );
       }
   }
+
   
   @Override
   public void Molhar() {

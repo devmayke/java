@@ -2,10 +2,11 @@ public class Passaro extends Animal  {
     
   public String tipo;
 
-  public Passaro( float aPeso, float aAltura, String aTipo ) {
-      super( aPeso, aAltura );
-      tipo = aTipo;
-  }
+  // public Passaro( float aPeso, float aAltura, String aTipo ) {
+  //     super( aPeso, aAltura );
+  //     tipo = aTipo;
+  // }
+  
   
   @Override
   public void andar() {
@@ -23,6 +24,6 @@ public class Passaro extends Animal  {
   
   @Override
   public void emitirSom() {
-      System.out.println( "Latir" );
+      System.out.println( "Canta" );
   }
 }
