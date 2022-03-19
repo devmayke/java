@@ -7,6 +7,12 @@ public abstract class Crianca extends Humano {
   public Crianca() {
       formatoChupeta = "Padrão";
   }
+  
+  public void Andar() {
+    System.out.println("teste");
+    
+}
+
 
   public void Comer() {
       System.out.println( "Apenas mama no peito da mãe ou na mamadeira" );

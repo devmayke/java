@@ -17,25 +17,25 @@ public class Main {
     // movel.Molhar();
     // movel.Quebrar("médio");
     System.out.println("=================================");
-
     System.out.println("Cachorros :");
-
     Animal fila = new Cachorro();
-    fila.emitirSom();
-
+    fila.EmitirSom();
     Animal viraLata = new Cachorro();
-    viraLata.emitirSom();
+    viraLata.EmitirSom();
     System.out.println();
     System.out.println("=================================");
+
+
 
     System.out.println("Pássaros :");
-
     Passaro pombo = new Passaro();  
-    pombo.comer(); 
-    pombo.emitirSom(); 
-
+    pombo.Comer(); 
+    pombo.EmitirSom(); 
     System.out.println();
     System.out.println("=================================");
+
+
+
 
     System.out.println("Carros :");
     Estrutura fusca = new Movel(1.5f, 2f, 3, 100 );
@@ -43,11 +43,19 @@ public class Main {
     System.out.println();
     System.out.println("=================================");
 
-    System.out.println("Prédios :");
 
+
+
+    System.out.println("Prédios :");
     Fixo predio = new Fixo(200f,30f,30f,"Alto");
     System.out.println(predio.altura);
     System.out.println(predio.tipo);
+    System.out.println();
+    System.out.println("=================================");
+
+
+    Elemento bebe = new Bebe(2, 3);
+    bebe.Andar();
 
 
 

@@ -10,12 +10,17 @@ public class Cachorro extends Animal {
       
   }
   @Override
-  public void andar() {
+  public void Andar() {
       System.out.println( "PDD - PTE - PDE - PTD" );
   }
   
   @Override
-  public void comer() {
+public void Correr() {
+    // TODO Auto-generated method stub
+    super.Correr();
+}
+@Override
+  public void Comer() {
       System.out.println( "Come ração" );
       String lValor;
       if ( peso < 2 ) { lValor = "100 gramas"; }
@@ -27,7 +32,7 @@ public class Cachorro extends Animal {
   }
   
   @Override
-  public void emitirSom() {
+  public void EmitirSom() {
       System.out.println( "Latir" );
   }
 }

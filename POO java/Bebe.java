@@ -22,8 +22,13 @@ public class Bebe extends Crianca {
   public Bebe(float aPeso, float aTamanho) {
     this(false, aPeso, aTamanho);
   }
+ @Override
+  public void Andar(){
+    super.Andar();
+    System.out.println("Engatinha");
+  }
 
-  @Override
+
   protected void Aprender() {
     System.out.println("Aprende a Sorrir");
   }

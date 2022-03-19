@@ -9,7 +9,7 @@ public class Passaro extends Animal  {
   
   
   @Override
-  public void andar() {
+  public void Andar() {
       System.out.println( "Pulando" );
   }
   
@@ -18,12 +18,12 @@ public class Passaro extends Animal  {
   }
   
   @Override
-  public void comer() {
+  public void Comer() {
       System.out.println( "Come ração" );
   }
   
   @Override
-  public void emitirSom() {
+  public void EmitirSom() {
       System.out.println( "Canta" );
   }
 }
