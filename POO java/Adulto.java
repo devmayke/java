@@ -1,4 +1,4 @@
-public class Adulto {
+public class Adulto extends Humano{
   public float imc;
     
     public void Correr() {

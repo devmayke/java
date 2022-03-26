@@ -7,12 +7,15 @@ public class Fixo extends Estrutura {
       super( aAltura, aLargura, aComprimento );
       tipo = aTipo;
   }
-  public Fixo(){
+  
+  
+  
+  public Fixo() {
+}
 
-  }
-  
-  
-  @Override
+
+
+@Override
   public void Quebrar( String aNivel ) {
       if ( "Leve".equalsIgnoreCase( aNivel ) ) {
           System.out.println( "Causar uma sujeira" );

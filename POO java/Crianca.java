@@ -7,9 +7,10 @@ public abstract class Crianca extends Humano {
   public Crianca() {
       formatoChupeta = "Padrão";
   }
+
   
   public void Andar() {
-    System.out.println("teste");
+    System.out.print("");
     
 }
 

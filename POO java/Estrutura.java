@@ -35,6 +35,9 @@ public abstract class Estrutura implements Elemento {
       comprimento = aComprimento;
       volume = altura * largura * comprimento;
   }
+  public Estrutura(){
+    
+  }
   
   public abstract void Quebrar( String aNivel );
   

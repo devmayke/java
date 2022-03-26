@@ -1,9 +1,46 @@
 public class Humano implements Elemento {
-
+    
     public String nomeEscola;
     protected boolean usaChupeta;
     private String formatoChupeta;
+    private String nome;
+    private String cpf;   
     
+    public Humano(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
+    }
+
+
+
+    public String getNome() {
+        return nome;
+    }
+
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+
+    public String getCpf() {
+        return cpf;
+    }
+
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    
+
+
+
+
+    public Humano() {
+    }
+
+
     public void Crianca() {
         formatoChupeta = "Padrão";
     }
