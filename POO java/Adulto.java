@@ -1,34 +1,68 @@
-public class Adulto extends Humano{
-  public float imc;
+public class Adulto extends Humano {
     
+    private float imc;
+
+    public float getImc() {
+        return imc;
+    }
+
+
+    
+
+    @Override
+    public void setAltura(float altura) {
+        super.setAltura(altura);
+    }
+
+
+
+
+    @Override
+    public void setPeso(float peso) {
+        super.setPeso(peso);
+    }
+
+
+    public Adulto(float altura, float peso){
+        setAltura(altura);
+        setPeso(peso);
+
+    }
+
+
+
+    private void imc() {
+        this.imc = getPeso() / (getAltura() * getAltura());
+    }
+
     public void Correr() {
-        imc = peso / ( altura * altura );
-        System.out.println( "Com o IMC de " + imc );
-        if ( imc < 25 ) {
-            System.out.println( "Corre muito rápido" );
+        imc();
+
+        System.out.println("Com o IMC de " + imc);
+        if (getImc() < 25) {
+            System.out.println("Corre muito rápido");
         }
-        if ( imc >= 25 && imc < 30 ) {
-            System.out.println( "Corre bem" );
+        if (getImc() >= 25 && getImc() < 30) {
+            System.out.println("Corre bem");
         }
-        if ( imc >= 30 )
-        {
-            System.out.println( "Corrida bem lenta e com dificuldade" );
+        if (getImc() >= 30) {
+            System.out.println("Corrida bem lenta e com dificuldade");
         }
     }
-    
-    public void trabalhar( int aQtdeHoras ) {
+
+    public void trabalhar(int aQtdeHoras) {
         //
     }
-    
-    public void trabalhar( int aQtdeHoras, String aLocal ) {
+
+    public void trabalhar(int aQtdeHoras, String aLocal) {
         //
     }
-    
-    public void trabalhar( boolean aEquipamento ) {
+
+    public void trabalhar(boolean aEquipamento) {
         //
     }
-    
-    public int trabalhar( double aValor ) {
+
+    public int trabalhar(double aValor) {
         return 0;
     }
 }

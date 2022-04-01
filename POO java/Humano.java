@@ -1,8 +1,70 @@
-public class Humano implements Elemento {
+public abstract class Humano implements Elemento {
     
-    public String nomeEscola;
+    private String nomeEscola;
     protected boolean usaChupeta;
+    public float getPeso() {
+        return peso;
+    }
+
+
+
+    public void setPeso(float peso) {
+        this.peso = peso;
+    }
+
+
+
+    public float getAltura() {
+        return altura;
+    }
+
+
+
+    public void setAltura(float altura) {
+        this.altura = altura;
+    }
+
+
     private String formatoChupeta;
+    private float peso;
+    private float altura;
+
+
+    public String getNomeEscola() {
+        return nomeEscola;
+    }
+
+
+
+    public void setNomeEscola(String nomeEscola) {
+        this.nomeEscola = nomeEscola;
+    }
+
+
+
+    public boolean isUsaChupeta() {
+        return usaChupeta;
+    }
+
+
+
+    public void setUsaChupeta(boolean usaChupeta) {
+        this.usaChupeta = usaChupeta;
+    }
+
+
+
+    public String getFormatoChupeta() {
+        return formatoChupeta;
+    }
+
+
+
+    public void setFormatoChupeta(String formatoChupeta) {
+        this.formatoChupeta = formatoChupeta;
+    }
+
+
     private String nome;
     private String cpf;   
     

@@ -86,9 +86,27 @@ public class Main {
     //   }
     // }
 
-    Idoso idoso = new Idoso("Pedro Alvares Cabral", "000.000.000-00");
+    // Idoso idoso = new Idoso("Pedro Alvares Cabral", "000.000.000-00");
 
 
+        // Adulto pedro = new Adulto();
+        // Adulto joao = new Adulto();
+        // Idoso jose = new Idoso();
+        // Bebe julio = new Bebe();
+
+        // Relacionamento relacionamento = new Relacionamento(pedro, joao, "Amigos");
+        // System.out.println(relacionamento.getRelacionamento());
+
+        // Relacionamento relacionamento2 = new Relacionamento(jose, pedro, "Pai e filho");
+        // System.out.println(relacionamento2.getRelacionamento());
+
+        // Relacionamento relacionamento3 = new Relacionamento(jose, julio, "Irmãos");
+        // System.out.println(relacionamento3.getRelacionamento());
+
+
+
+        Adulto adulto = new Adulto(1.8f, 80f);
+        adulto.Comer();
 
 
 
