@@ -1,10 +1,14 @@
-public class Adulto extends Humano {
+public class Adulto extends Humano implements Runnable {
     
     private float imc;
 
     public float getImc() {
         return imc;
     }
+    public Adulto(String nome, String cpf) {
+        super(nome, cpf);
+      }
+    
 
 
     
@@ -28,6 +32,8 @@ public class Adulto extends Humano {
         setPeso(peso);
 
     }
+
+    
 
 
 
@@ -65,4 +71,13 @@ public class Adulto extends Humano {
     public int trabalhar(double aValor) {
         return 0;
     }
+    public void run() {
+        for ( int i=0; i<10; i++ ) {
+        //   System.out.println( "Humano:" + nome + " correndo..." );
+          Main.setCadeira( nome );
+        }
+    }
+
+
+
 }

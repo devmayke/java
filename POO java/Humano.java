@@ -1,10 +1,11 @@
-public abstract class Humano implements Elemento {
+public abstract class Humano implements Elemento, Runnable {
     
     private String nomeEscola;
     protected boolean usaChupeta;
     public float getPeso() {
         return peso;
     }
+    
 
 
 
@@ -65,8 +66,8 @@ public abstract class Humano implements Elemento {
     }
 
 
-    private String nome;
-    private String cpf;   
+    protected String nome;
+    protected String cpf;   
     
     public Humano(String nome, String cpf) {
         this.nome = nome;

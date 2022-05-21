@@ -1,4 +1,4 @@
-public class Bebe extends Crianca {
+public class Bebe extends Crianca implements Runnable {
   // @Override
   // public String falar(){
 
@@ -77,6 +77,8 @@ public class Bebe extends Crianca {
   protected void Aprender() {
     System.out.println("Aprende a Sorrir");
   }
+  
+  
 
   public void MamarNoPeito() {
     System.out.println("Mamar na mãe");
@@ -88,5 +90,13 @@ public class Bebe extends Crianca {
     super.Birra();
     System.out.println("Solta outro sonzinho");
   }
+
+
+  public void run() {
+    for ( int i=0; i<10; i++ ) {
+        System.out.println( "Bebe:" + nome + " Birra..." );
+        Main.setCadeira( nome );
+    }
+}
 
 }

@@ -1,4 +1,4 @@
-public class Idoso extends Humano {
+public class Idoso extends Humano implements Runnable{
 
   public static final int VELOC_ANDAR = 1; // metros por segundo
 
@@ -69,5 +69,13 @@ public class Idoso extends Humano {
     super.Falar();
     System.out.println("...para ouvintes desatentos");
   }
+
+
+  public void run() {
+    for ( int i=0; i<10; i++ ) {
+      System.out.println( "Humano:" + nome + " correndo..." );
+      Main.setCadeira( nome );
+    }
+}
 
 }
