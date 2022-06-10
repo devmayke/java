@@ -1,5 +1,4 @@
 public class Main {
-
   public static void main(String[] args) {
 
     Aviao VooFloripa = new Aviao("LA4380");
@@ -11,5 +10,4 @@ public class Main {
     System.out.println(BrinquedoRoger.toString());
 
   }
-
 }

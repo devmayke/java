@@ -1,11 +1,10 @@
 
-public class Padaria {
+public class Padaria{
   private int QtdePaes;
   private double precoPao;
 
-  public void setPrecoPao(double valor){
-    this.precoPao = valor;
-
+  public void setPrecoPao(double valor) {  
+   this.precoPao = valor;    
   }
   public double getPrecoPao(){
     return this.precoPao;
@@ -28,9 +27,12 @@ public class Padaria {
     return valor * getPrecoPao();
   }
 
-  public Padaria(int qtdePaes, double precoPao) {
-    setQtdePaes(qtdePaes);
-    setPrecoPao(precoPao);
+  public Padaria(int qtdePaes, double precoPao) throws NumeroNegativoException  { 
+      if(qtdePaes < 0 || precoPao < 0){
+        throw new NumeroNegativoException("Os numeros devem ser positivos!");
+      }      
+      setPrecoPao(precoPao);
+      setQtdePaes(qtdePaes);    
   }
 
   public double calcularQtdePaes() {
